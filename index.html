@@ -68,8 +68,6 @@
           markers.push(marker);
 
           google.maps.event.addListener(marker, "click", function (event) {
-              var latitude = event.latLng.lat();
-              var longitude = event.latLng.lng();
               $('#textarea').val($('#textarea').val() + latitude + '\n');
               $('#textarea2').val($('#textarea2').val() + longitude + '\n');
           });
